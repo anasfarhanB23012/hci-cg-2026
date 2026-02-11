@@ -4,6 +4,8 @@
   <!-- Character encoding for consistent text rendering -->
   <meta charset="UTF-8">
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <!-- Page title shown in browser tab and announced by screen readers -->
   <title>Don Norman – Contact</title>
 </head>
@@ -32,7 +34,7 @@
 
   <!-- Main landmark: primary content of this page -->
   <main>
-    <form action="#" method="post">
+    <form action="contact.html" method="post">
       
       <!-- Groups related form controls and provides context -->
       <fieldset>
@@ -40,11 +42,11 @@
 
         <!-- Label explicitly associated with its input -->
         <label for="subject">Subject</label><br>
-        <input type="text" id="subject" name="subject"><br><br>
+        <input type="text" id="subject" name="subject" required><br><br>
 
         <!-- Textarea with clear label for screen readers -->
         <label for="message">Message</label><br>
-        <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
+        <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
 
         <!-- Submit button is keyboard accessible by default -->
         <button type="submit">Send</button>
