@@ -2,17 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Norman vs. GOMS vs. KLM – Cognitive Models</title>
 
   <style>
     /* Minimal styling allowed in Lab 01: color only */
-    .row-norman { background-color: #fff3cd; } /* warm amber */
-    .row-goms   { background-color: #e7f3ff; } /* light blue */
-    .row-klm    { background-color: #e9f7ef; } /* light green */
+    .row-norman { background-color: #fff3cd; }
+    .row-goms   { background-color: #e7f3ff; }
+    .row-klm    { background-color: #e9f7ef; }
 
     .key-takeaway {
       background-color: #fff3cd;
       padding: 0.5em;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      padding: 0.6rem;
+      text-align: left;
+      vertical-align: top;
     }
   </style>
 </head>
@@ -41,8 +53,8 @@
   <main>
 
     <!-- Comparison section -->
-    <section>
-      <h2>Clean Comparison (Class &amp; Exam Reference)</h2>
+    <section aria-labelledby="comparison-heading">
+      <h2 id="comparison-heading">Clean Comparison (Class &amp; Exam Reference)</h2>
 
       <table border="1">
         <caption>
@@ -84,8 +96,8 @@
     </section>
 
     <!-- KLM operators -->
-    <section>
-      <h2>KLM Operators (Execution-Level Primitives)</h2>
+    <section aria-labelledby="klm-heading">
+      <h2 id="klm-heading">KLM Operators (Execution-Level Primitives)</h2>
 
       <p>
         The Keystroke-Level Model (KLM) decomposes the <strong>execution phase</strong>
@@ -153,7 +165,7 @@
           <tr>
             <th scope="row">R</th>
             <td>System response</td>
-            <td>Waiting for system feedback (if required)</td>
+            <td>Waiting for system feedback</td>
             <td>Application loading</td>
           </tr>
         </tbody>
@@ -161,8 +173,8 @@
     </section>
 
     <!-- Worked example -->
-    <section>
-      <h2>Worked Example: Correcting a Single Character</h2>
+    <section aria-labelledby="example-heading">
+      <h2 id="example-heading">Worked Example: Correcting a Single Character</h2>
 
       <p>
         Example task: the user notices a single-character error in a mouse-based
@@ -196,8 +208,8 @@ H[mouse] M P B[LEFT]
     </section>
 
     <!-- Key takeaways -->
-    <section>
-      <h2>Key Takeaways</h2>
+    <section aria-labelledby="takeaway-heading">
+      <h2 id="takeaway-heading">Key Takeaways</h2>
 
       <blockquote class="key-takeaway">
         <p>
